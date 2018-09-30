@@ -1,0 +1,72 @@
+// Place all the styles related to the pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+a:hover:after {
+    content: "";
+    display: block;
+    width: 70%;
+    border-bottom: 2px solid;
+    margin: 0 auto;
+    color: #000 !important;
+    font-weight: bold;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: #000000 !important;
+}
+
+.btn-outline-success { 
+    color: #000 !important;
+    background-color: transparent;
+    background-image: none;
+    border-color: #000 !important;
+}
+
+.btn-outline-success:hover {
+   background-color: #fff !important;
+    
+}
+
+h5{
+    margin: 30px !important;
+    font-weight: normal !important;
+}
+
+
+.box {
+   margin-left:  100px !important;
+}
+
+p{
+    margin-left: 30px;
+    margin-right: 30px;
+    font-size: 14px;
+}
+
+.square {
+    width: 80px;
+    height: 80px;
+    display: block;
+    overflow: hidden;
+    float: left;
+    margin: 2px;
+    border-color: #000;
+    border-width: 1px; 
+    border-style: solid;
+    padding-top: 25px;
+    text-align: center;
+
+}
+.linebreak{
+    clear:both;
+}
+
+.sigin{
+     border-radius: 0px;
+     margin: 10px 20px 20px 150px;
+     color: #fff !important;
+     border-bottom: 0px !important;
+}

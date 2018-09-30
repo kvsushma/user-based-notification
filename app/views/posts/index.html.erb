@@ -1,0 +1,15 @@
+<h1>Demo</h1>
+
+<div id="messages">
+  <%= render @sectors %>
+</div>
+
+<%= form_with url: '#', html: {id: 'new-message'} do |f| %>
+    <%= f.label :post %>
+    <%= f.text_area :post, id: 'sector-post' %>
+    <%= f.collection_select :role, current_user.roles, :id, :name, {}, {id: 'sector-role'}%>
+    <br>
+    <%= f.submit %>
+<% end %>
+
+
