@@ -15,9 +15,11 @@
 //= require jquery3
 //= require activestorage
 //= require turbolinks
-//= require_tree ./channels
 //= require popper
 //= require bootstrap-sprockets
+//= require tinymce
+//= require_tree .
+
 
 $(document).ready(function(){
 	setTimeout(function(){

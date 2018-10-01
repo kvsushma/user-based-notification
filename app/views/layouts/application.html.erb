@@ -6,6 +6,9 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= action_cable_meta_tag %>
   <%= csrf_meta_tags %>
+  <%= javascript_tag do %>
+      window.role_ids = <%= current_user&.roles&.pluck(:id) %>
+    <% end %>
 </head>
   <body>
     <% if notice %>

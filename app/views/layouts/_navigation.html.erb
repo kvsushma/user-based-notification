@@ -1,5 +1,5 @@
-<nav class="navbar navbar-light ">
-    <%= image_tag "logo.png" , :size => "150x80" %>
+<nav class="navbar navbar-light  ">
+    <%= link_to (image_tag "logo.png", :size => "150x80" ), pages_home_path   %>
   <ul class="nav justify-content-end">
     <li class="nav-item">
       <a class="nav-link active" href="#">Home</a>
@@ -19,3 +19,5 @@
     </form>
   </ul>
 </nav>
+
+<%# link_to image_tag('buckminsterfullerene.png', width: '210', height: '60', alt: 'Molecular structure of Buckminsterfullerene'), 'some_long_path.html', title: 'Buckminsterfullerene', rel: 'tooltip', relative: true %>

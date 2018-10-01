@@ -1,3 +1,24 @@
-welcome user
+<%= tinymce_assets %>
+<%= tinymce %>
+<div class="container">
+  <div class="row justify-content-md-center">
+    <div class="col-md-5">
+     <h2 class="text-center">Welcome To Ivycamp</h2>
+     <h6 class="text-center"> You have enrolled to role <%= users_roles(current_user) %> </h6>
+    </div>
+  </div>
+</div>
 
-<div id="messages"></div>
+<div id="messages">
+  <%= render @messages %>
+</div>
+
+<div class="col-md-5">
+ <%= form_with url: '#', html: {id: 'new-message'} do |f| %>
+      <%= f.label :Post %>
+      <%= f.text_area :body, id: 'message-body' %>
+      <%= f.collection_select :role, current_user.roles, :id, :name, {}, {id: 'message-role'}%>
+      <br>
+      <%= f.submit %>
+  <% end %>
+</div>

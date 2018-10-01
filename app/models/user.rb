@@ -5,4 +5,6 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :validatable
   has_many :sectors
   has_many :roles, through: :sectors
+
+  has_many :messages
 end

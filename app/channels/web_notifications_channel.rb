@@ -1,4 +1,4 @@
-class ChatChannel < ApplicationCable::Channel
+class WebNotificationsChannel < ApplicationCable::Channel
   def subscribed
     stream_from "role-#{params['role']}:messages"
   end

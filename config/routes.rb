@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  get 'posts/index'
+  resources :messages
   devise_for :users, controllers: { registrations: "registrations" }
 
   get 'pages/home'

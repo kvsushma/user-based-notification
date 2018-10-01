@@ -2,26 +2,29 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-a:hover:after {
-    content: "";
-    display: block;
-    width: 70%;
-    border-bottom: 2px solid;
-    margin: 0 auto;
-    color: #000 !important;
-    font-weight: bold;
+nav li{
+    a:hover:after {
+        content: "";
+        display: block;
+        width: 70%;
+        border-bottom: 2px solid;
+        margin: 0 auto;
+        color: #000 !important;
+        font-weight: bold;
+    }
+
+    a {
+        display: inline-block;
+        text-decoration: none;
+        color: #000000 !important;
+    }
 }
 
-a {
-    display: inline-block;
-    text-decoration: none;
-    color: #000000 !important;
-}
+
 
 .btn-outline-success { 
     color: #000 !important;
     background-color: transparent;
-    background-image: none;
     border-color: #000 !important;
 }
 
