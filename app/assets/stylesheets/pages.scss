@@ -21,6 +21,13 @@ nav li{
 }
 
 
+div {
+    a {
+        display: inline-block;
+        text-decoration: none;
+        color: #000000 !important;
+    }
+}
 
 .btn-outline-success { 
     color: #000 !important;
